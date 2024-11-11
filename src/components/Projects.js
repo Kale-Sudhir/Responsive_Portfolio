@@ -2,8 +2,8 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div>
-      <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+    <div id="LatestWork" >
+      <section class="max-w-screen-xl mx-auto px-4 relative pb-8 scroll-smooth sm:pb-16">
         <h2 class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
           Latest Works
         </h2>
@@ -16,8 +16,8 @@ const Projects = () => {
           >
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
               <img
-                class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-                src="https://anuragsinghbam.netlify.app/images/harigurus.webp"
+                class=" w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="https://shahucollegelatur.org.in/pages/Sudhir1.png"
                 alt=""
               />
               <span class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
@@ -50,42 +50,41 @@ const Projects = () => {
               {/* (Coding Platform) */}
             </span>
             <p class="text-justify text-sm md:text-base mt-2">
-            Welcome to my portfolio! I’m Sudhir Kale, a full stack developer specializing in creating responsive, high-performance web applications. This portfolio, built with React, showcases my skills in front-end development, providing a smooth, user-friendly experience across devices. I focus on clean design and efficient code, ensuring seamless navigation and fast load times. From intuitive user interfaces to robust back-end solutions, I aim to craft digital experiences that make a difference. Explore my work, check out my projects.!
+              Welcome to my portfolio! I’m Sudhir Kale, a full stack developer
+              specializing in creating responsive, high-performance web
+              applications. This portfolio, built with React, showcases my
+              skills in front-end development, providing a smooth, user-friendly
+              experience across devices. I focus on clean design and efficient
+              code, ensuring seamless navigation and fast load times. From
+              intuitive user interfaces to robust back-end solutions, I aim to
+              craft digital experiences that make a difference. Explore my work,
+              check out my projects.!
             </p>
 
             <ul class="flex flex-wrap gap-2 mt-2">
               <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #react.js
+                #React.js
               </li>
               <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #express.js
+                #Tailwind Css
               </li>
               <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #node.js
+                #Css
               </li>
               <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #swiper.js
+                #Javascript
               </li>
               <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #mongoDB
+                #Vercel
               </li>
               <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #mongoose
-              </li>
-              <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #css
-              </li>
-              <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #javascript
-              </li>
-              <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                #figma
+                #GitHub
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+        {/* <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
           <div class="order-2 sm:order-1 w-full">
             <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
               EazyGrad
@@ -162,7 +161,7 @@ const Projects = () => {
               </span>
             </div>
           </a>
-        </div>
+        </div> */}
 
         <div class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
       </section>

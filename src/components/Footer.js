@@ -46,7 +46,7 @@ c17 -8 64 -22 105 -32z"
         </div>
         <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
           <li>
-            <a href="#" target="_blank">
+            <a href="https://www.linkedin.com/in/sudhir-kale/" target="_blank">
               <svg
                 class="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ c17 -8 64 -22 105 -32z"
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://x.com/Kale_Sudhir45" target="_blank">
               <svg
                 class="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ c17 -8 64 -22 105 -32z"
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/its__sudhirrr/">
               <svg
                 class="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
                 xmlns="http://www.w3.org/2000/svg"

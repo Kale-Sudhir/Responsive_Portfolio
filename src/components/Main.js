@@ -42,7 +42,7 @@ c17 -8 64 -22 105 -32z"
             />
           </g>
         </svg>
-    
+
         <div className="relative ml-16">
           <h1 className="md:text-6xl ml-20 sm:ml-32 font-['Spartan'] ">
             udhir Kale
@@ -75,7 +75,7 @@ c17 -8 64 -22 105 -32z"
 
       <ul className="ml-auto space-y-7 text-[#b0b2c3] absolute right-8">
         <li>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/sudhir-kale/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -90,7 +90,7 @@ c17 -8 64 -22 105 -32z"
         </li>
 
         <li>
-          <a href="#">
+          <a href="https://x.com/Kale_Sudhir45">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -105,7 +105,7 @@ c17 -8 64 -22 105 -32z"
         </li>
 
         <li>
-          <a href="#">
+          <a href="https://www.instagram.com/its__sudhirrr/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -120,7 +120,7 @@ c17 -8 64 -22 105 -32z"
         </li>
 
         <li>
-          <a href="#">
+          <a href="https://github.com/Kale-Sudhir">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
