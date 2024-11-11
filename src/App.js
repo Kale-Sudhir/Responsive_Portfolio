@@ -1,8 +1,9 @@
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Main from "./components/Main";
-
 import "./components/Font.css";
+import Footer from "./components/Footer";
+import Form from "./components/Form";
 function App() {
   return (
     <div className="bg-[#111] text-white font-['Nunito']">
@@ -35,6 +36,8 @@ function App() {
         </div>
       </div>{" "}
       <Projects />
+      <Form />
+      <Footer />
     </div>
   );
 }

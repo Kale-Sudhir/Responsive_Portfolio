@@ -42,10 +42,10 @@ c17 -8 64 -22 105 -32z"
             />
           </g>
         </svg>
-
+    
         <div className="relative ml-16">
-          <h1 className="md:text-6xl  font-['Spartan'] ">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; udhir Kale
+          <h1 className="md:text-6xl ml-20 sm:ml-32 font-['Spartan'] ">
+            udhir Kale
           </h1>
           <p className=" text-2xl italic font-['Merriweather'] my-5 ">
             I'm Full Stack Developer
@@ -79,7 +79,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="w-7 hover:text-white"
+              className="w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
             >
               <path
                 fill="currentColor"
@@ -94,7 +94,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              className="w-7 hover:text-white"
+              className="w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
             >
               <path
                 fill="currentColor"
@@ -109,7 +109,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="w-7 hover:text-white"
+              className="w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
             >
               <path
                 fill="currentColor"
@@ -124,7 +124,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
-              className="w-7 hover:text-white"
+              className="hover:scale-110 ease-in-out duration-100 w-7 hover:text-white "
             >
               <path
                 fill="currentColor"
