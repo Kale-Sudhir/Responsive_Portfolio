@@ -4,17 +4,22 @@ import Main from "./components/Main";
 import "./components/Font.css";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
+import { useState } from "react";
 function App() {
+  const [open, setOpen] = useState(true);
+
   return (
-    <div className="bg-[#111] text-white font-['Nunito']">
+    <div
+      className={`${
+        open ? " bg-[#111] text-white " : "bg-white text-black "
+      } font-['Nunito']`}
+    >
       <div className="flex flex-col justify-between h-screen ">
-        <Header />
-
+        <Header set={setOpen} opn={open} />
         <Main />
-
         <div className="relative after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] self-center after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
           <a href="#LatestWork">
-            <button  className=" scroll-smooth bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20">
+            <button className=" scroll-smooth bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20">
               Latest Work
               <svg
                 className="absolute left-1/2 rotate-90 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100"
@@ -36,7 +41,7 @@ function App() {
             </button>
           </a>
         </div>
-      </div>{" "}
+      </div>
       <Projects />
       <Form />
       <Footer />

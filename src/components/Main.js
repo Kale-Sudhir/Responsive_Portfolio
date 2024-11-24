@@ -44,7 +44,7 @@ c17 -8 64 -22 105 -32z"
         </svg>
 
         <div className="relative ml-16">
-          <h1 className="md:text-6xl ml-20 sm:ml-32 font-['Spartan'] ">
+          <h1 className="md:text-6xl ml-16 sm:ml-32 font-['Spartan'] ">
             udhir Kale
           </h1>
           <p className=" text-2xl italic font-['Merriweather'] my-5 ">

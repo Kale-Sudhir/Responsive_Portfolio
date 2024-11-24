@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <footer class="flex flex-col items-center pb-10 ">
-        <p class=" text-gray-300 mt-5 text-1xl ">Sudhir Kale © 2024</p>
+        <p class=" mt-5 text-1xl ">Sudhir Kale © 2024</p>
         <div class="black-logo my-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
