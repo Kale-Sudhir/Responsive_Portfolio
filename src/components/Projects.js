@@ -17,7 +17,7 @@ const Projects = () => {
           >
             <div class=" flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
               <img
-                class=" w-full  ml-10 sm:ml-0 relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                class=" w-full  ml-[2rem] sm:ml-0 relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
                 src="https://shahucollegelatur.org.in/pages/Sudhir1.png"
                 alt=""
               />
@@ -136,7 +136,7 @@ const Projects = () => {
           >
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
               <img
-                class=" w-full ml-14 relative z-10 drop-shadow-[0_0px_60px_rgba(159,149,56,1)]"
+                class=" w-full ml-[2rem] relative z-10 drop-shadow-[0_0px_60px_rgba(159,149,56,1)]"
                 src="https://shahucollegelatur.org.in/pages/Sudhir.png"
                 alt=""
               />
@@ -173,7 +173,7 @@ const Projects = () => {
           >
             <div class=" flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
               <img
-                class=" w-full  ml-10 sm:ml-0 relative z-10 drop-shadow-[0_0px_60px_rgba(132,29,183,1)]"
+                class=" w-full  ml-[2rem] sm:ml-0 relative z-10 drop-shadow-[0_0px_60px_rgba(132,29,183,1)]"
                 src="https://shahucollegelatur.org.in/pages/Cloudy.png"
                 alt=""
               />
@@ -289,7 +289,7 @@ const Projects = () => {
           >
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
               <img
-                class=" w-full ml-14 relative z-10 drop-shadow-[0_0px_60px_rgba(252,84,84,1)]"
+                class=" w-full ml-[2rem] relative z-10 drop-shadow-[0_0px_60px_rgba(252,84,84,1)]"
                 src="https://shahucollegelatur.org.in/pages/Youtube.png"
                 alt=""
               />
