@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Main() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="mt-10 flex relative ">
       <div className="px-4 max-w-screen-xl mx-auto w-full ">
@@ -50,7 +51,7 @@ c17 -8 64 -22 105 -32z"
           <p className=" text-2xl italic font-['Merriweather'] my-5 ">
             I'm Full Stack Developer
           </p>
-          <button className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">
+          <button  onClick={() => setIsOpen(true)} className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">
             About Me
             <svg
               version="1.1"
@@ -70,6 +71,30 @@ c17 -8 64 -22 105 -32z"
               </g>
             </svg>
           </button>
+      
+
+      {isOpen && (
+     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+     <div className="bg-white p-6 rounded-xl shadow-lg w-100 max-h-[80vh] overflow-y-auto relative text-black">
+       <h2 className="text-xl font-semibold mb-4 text-[#4253e6e6]">About Me</h2>
+       <p className="mb-4 leading-relaxed text-sm">
+         I am a dedicated full-stack developer with a strong foundation in both frontend and backend technologies. <br /><br />
+         My core expertise lies in React.js, Angular JavaScript frameworks, Bootstrap, and Tailwind CSS. <br /><br />
+         As a frontend developer intern at OneGreenDiary, Pune, I contribute to production-level applications using React and Angular. <br /><br />
+         I am well-versed in creating responsive, accessible, and high-performance user interfaces. <br /><br />
+         I also manage deployments using tools like Plesk and cPanel, ensuring seamless website hosting and maintenance. <br /><br />
+         With a background in UI/UX design, I focus on building clean, user-centric interfaces.
+       </p>
+       <button onClick={() => setIsOpen(false)} className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l text-white from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">
+       
+         Close
+       </button>
+     </div>
+   </div>
+   
+      )}
+
+
         </div>
       </div>
 

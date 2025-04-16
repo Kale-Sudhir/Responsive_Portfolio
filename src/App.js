@@ -5,10 +5,13 @@ import "./components/Font.css";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
 import { useState } from "react";
+import Experience from "./components/Experience";
 function App() {
   const [open, setOpen] = useState(true);
 
   return (
+
+    
     <div
       className={`${
         open ? " bg-[#111] text-white " : "bg-white text-black "
@@ -42,7 +45,9 @@ function App() {
           </a>
         </div>
       </div>
+
       <Projects />
+      <Experience />
       <Form />
       <Footer />
     </div>
