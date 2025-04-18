@@ -29,7 +29,7 @@ const Experience = () => {
     </button> */}
         </div>
 
-        <div className="w-3/5 ml-[20%] mt-48 mb-32 p-6 py-10 sm:p-12 bg-white bg-opacity-70 drop-shadow-[0_0px_60px_rgba(192,208,0,1)] rounded-lg backdrop-blur-sm">
+        <div className="w-3/5 ml-[20%] mt-40 mb-32 p-6 py-10 sm:p-12 bg-white bg-opacity-70  shadow-[0_0px_60px_rgba(192,208,0,1)] rounded-lg backdrop-blur-sm">
           <h2 className=" text-center text-xl font-semibold text-black">
             Dr. Babasaheb Ambedkar Mahavidyalaya, Latur{" "}
           </h2>
@@ -44,6 +44,20 @@ const Experience = () => {
       Learn More
     </button> */}
         </div>
+        
+        
+        <div className="w-3/5 ml-[20%] mt-10 mb-32 p-6 py-10 sm:p-12 bg-white bg-opacity-70 shadow-[0_0px_60px_rgba(132,29,183,1)] rounded-lg backdrop-blur-sm">
+  <h2 className="text-center text-xl font-semibold text-black">
+    OneGreenDiary Software Pvt. Ltd., Pune
+  </h2>
+  <h6 className="text-center text-black">
+    Front-End Developer Intern | <span className="font-bold">12 / 2024 – Present</span>
+  </h6>
+  <p className="text-center mt-4 text-black">
+    Working on live business applications using React and Angular frameworks. Collaborating with design and backend teams to implement responsive UI features. Solving real-time issues and debugging across multiple platforms. Participating in daily stand-ups and agile development processes. Contributing to code quality, optimization, and version control using Git.
+  </p>
+</div>
+
       </div>
     </div>
   );
