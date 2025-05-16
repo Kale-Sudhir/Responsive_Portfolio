@@ -2,10 +2,9 @@ import React from "react";
 import Sudhir_portfolio from "../Images/Sudhir_Kale_Portfolio.png";
 import Ks_elects from "../Images/KS_Elects.png";
 import Youtube from "../Images/Youtube_Clone.png";
-import cloudy  from "../Images/Cloudy_Area.png";
+import cloudy from "../Images/Cloudy_Area.png";
 
-
-const Projects = ({dta}) => {
+const Projects = ({ dta }) => {
   return (
     <div id="LatestWork">
       <section class="max-w-screen-xl mx-auto px-4 relative pb-8 scroll-smooth sm:pb-16">
@@ -27,7 +26,7 @@ const Projects = ({dta}) => {
                 alt="Sudhir Kale Portfolio"
               />
               <span class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
-                Portfolio  
+                Portfolio
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

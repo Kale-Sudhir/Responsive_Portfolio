@@ -2,17 +2,14 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 mt-40">
       <div class="sm:mx-auto sm:w-full sm:max-w-sm">
         <h2 class="text-3xl sm:text-[40px] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#e260f3] sm:border-b-2 border-[#e260f3]">
           Connect with Me
         </h2>
       </div>
 
-      <div
-         
-        class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm text-black bg-white p-20 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-      >
+      <div class="mt-20 sm:mx-auto sm:w-full sm:max-w-sm text-black bg-white p-20 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
         <form class="space-y-6" action="#" method="POST">
           <div>
             <label for="email" class="block text-sm/6 font-medium">
@@ -51,7 +48,7 @@ const Form = () => {
           <div>
             <div class="flex items-center justify-between">
               <label for="password" class="block text-sm/6 font-mediu">
-                Message 
+                Message
               </label>
             </div>
             <div class="">
