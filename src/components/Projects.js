@@ -1,5 +1,5 @@
 import React from "react";
-import Sudhir_portfolio from "src/Images/Sudhir_Kale_Portfolio.png.png";
+import Sudhir_portfolio from "src/Images/Sudhir_Kale_Portfolio.png";
 import Ks_elects from "src/Images/KS_Elects.png";
 import Youtube from "src/Images/KS_Elects.png";
 import cloudy  from "src/Images/Cloudy_Area.png";
