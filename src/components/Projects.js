@@ -1,8 +1,8 @@
 import React from "react";
-import Sudhir_portfolio from "../images/sudhir_kale_portfolio.png";
-import Ks_elects from "../images/KS_Elects.png";
-import Youtube from "../images/Youtube_Clone.png";
-import cloudy  from "../images/Cloudy_Area.png";
+import Sudhir_portfolio from "./images/sudhir_kale_portfolio.png";
+import Ks_elects from "./images/KS_Elects.png";
+import Youtube from "./images/Youtube_Clone.png";
+import cloudy  from "./images/Cloudy_Area.png";
 
 const Projects = ({dta}) => {
   return (
