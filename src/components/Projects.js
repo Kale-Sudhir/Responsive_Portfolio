@@ -18,8 +18,7 @@ const Projects = () => {
             <div class=" flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
               <img
                 class=" w-full  ml-[2rem] sm:ml-0 relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-                src="https://shahucollegelatur.org.in/pages/Sudhir1.png"
-                alt=""
+               src="/Images/Sudhir Kale Portfolio.png" alt="Sudhir Kale Portfolio" 
               />
               <span class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
                 Portfolio
@@ -137,8 +136,7 @@ const Projects = () => {
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
               <img
                 class=" w-full ml-[2rem] relative z-10 drop-shadow-[0_0px_60px_rgba(159,149,56,1)]"
-                src="https://shahucollegelatur.org.in/pages/Sudhir.png"
-                alt=""
+               src="/Images/Sudhir.png" alt="KS Elects" 
               />
               <span class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#ffe578] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
                 KS Elects
@@ -174,8 +172,8 @@ const Projects = () => {
             <div class=" flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
               <img
                 class=" w-full  ml-[2rem] sm:ml-0 relative z-10 drop-shadow-[0_0px_60px_rgba(132,29,183,1)]"
-                src="https://shahucollegelatur.org.in/pages/Cloudy.png"
-                alt=""
+                src="/Images/Cloudy.png"
+                alt="Cloudy Area"
               />
               <span class="flex group-hover:-top-14 ease-jump duration-200 bg-[#639] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
                 Cloudy Area
@@ -290,8 +288,8 @@ const Projects = () => {
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
               <img
                 class=" w-full ml-[2rem] relative z-10 drop-shadow-[0_0px_60px_rgba(252,84,84,1)]"
-                src="https://shahucollegelatur.org.in/pages/Youtube.png"
-                alt=""
+                src="/Images/Youtube.png"
+                alt="YouTube Clone"
               />
               <span class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#fc815c] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
                 Youtube Clone
