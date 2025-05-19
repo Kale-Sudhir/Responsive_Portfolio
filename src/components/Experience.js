@@ -22,7 +22,7 @@ const Experience = () => {
                 <img
                   src="https://erp.rsml.in/public/assets/img/rsml.jpg"
                   alt="RSML"
-                  className="h-40 lg:h-24 ml-12 lg:ml-28 w-36 lg:w-20"
+                  className="h-40 lg:h-24 ml-8 lg:ml-28 w-36 lg:w-20"
                 />
               </div>
               <div className="w-full md:w-9/12  ">
@@ -55,7 +55,7 @@ const Experience = () => {
           <div class=" ml-[10%] lg:ml-[20%] mt-40 sm:mx-auto w-[80%] lg:w-[60%] text-black bg-white p-10 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-3/12">
-                <img src={Baml} alt="BAML" className="h-24 ml-16 lg:ml-28" />
+                <img src={Baml} alt="BAML" className="h-24 ml-10 lg:ml-28" />
               </div>
               <div className="w-full md:w-9/12  ">
                 <h2 className=" text-center text-xl font-semibold text-black mt-7 lg:mt-6">
