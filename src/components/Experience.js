@@ -11,12 +11,13 @@ const Experience = () => {
       </div>
 
       <div className=" flex flex-col mt-28 justify-center">
-        <a
-          href="https://www.shahucollegelatur.org.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class=" ml-[10%] lg:ml-[20%] mt-20 sm:mx-auto w-[80%] lg:w-[60%] text-black bg-white p-10 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
+        <div class=" ml-[10%] lg:ml-[20%] mt-20 sm:mx-auto w-[80%] lg:w-[60%] text-black bg-white p-10 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
+          <a
+            href="https://www.shahucollegelatur.org.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-3/12">
                 <img
@@ -35,7 +36,6 @@ const Experience = () => {
                 </h6>
               </div>
             </div>
-
             <p className=" text-center mt-5 text-black">
               Developing & Maintaining website, that includes mainly PHP, MySQL
               and JavaScript. Worked on several challenges and difficulties over
@@ -44,15 +44,17 @@ const Experience = () => {
             </p>
             {/* <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
       Learn More
-    </button> */}
-          </div>
-        </a>
-        <a
-          href="https://www.baml.org.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class=" ml-[10%] lg:ml-[20%] mt-40 sm:mx-auto w-[80%] lg:w-[60%] text-black bg-white p-10 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
+    </button> */}{" "}
+          </a>
+        </div>
+
+        <div class=" ml-[10%] lg:ml-[20%] mt-40 sm:mx-auto w-[80%] lg:w-[60%] text-black bg-white p-10 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
+          <a
+            href="https://www.baml.org.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-3/12">
                 <img src={Baml} alt="BAML" className="h-24 ml-10 lg:ml-28" />
@@ -67,7 +69,6 @@ const Experience = () => {
                 </h6>
               </div>
             </div>
-
             <p className=" text-center mt-5 text-black">
               Developed a dynamic website using Laravel and the Blade templating
               engine to deliver efficient and responsive views. Successfully
@@ -75,15 +76,17 @@ const Experience = () => {
               operations. Led a team of developers, coordinated tasks. Worked
               closely with team members to maintain coding standards and project
               quality
-            </p>
-          </div>
-        </a>
-        <a
-          href="https://www.onegreendiary.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class=" ml-[10%] lg:ml-[20%] mt-40 sm:mx-auto w-[80%] lg:w-[60%] text-black bg-white p-10 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
+            </p>{" "}
+          </a>
+        </div>
+
+        <div class=" ml-[10%] lg:ml-[20%] mt-40 sm:mx-auto w-[80%] lg:w-[60%] text-black bg-white p-10 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
+          <a
+            href="https://www.onegreendiary.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-5/12">
                 <img
@@ -102,7 +105,6 @@ const Experience = () => {
                 </h6>
               </div>
             </div>
-
             <p className="text-center mt-5 text-black">
               Working on live business applications using React and Angular
               frameworks. Collaborating with design and backend teams to
@@ -110,9 +112,9 @@ const Experience = () => {
               debugging across multiple platforms. Participating in daily
               stand-ups and agile development processes. Contributing to code
               quality, optimization, and version control using Git.
-            </p>
-          </div>
-        </a>
+            </p>{" "}
+          </a>
+        </div>
 
         {/* <div className="w-[80%] lg:w-[60%] ml-[10%] lg:ml-[20%] mt-10 mb-32 p-6 py-10 sm:p-12 bg-white bg-opacity-70 shadow-[0_0px_60px_rgba(132,29,183,1)] rounded-lg backdrop-blur-sm">
           <h2 className="text-center text-xl font-semibold text-black">
