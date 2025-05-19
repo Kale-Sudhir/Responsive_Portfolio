@@ -10,7 +10,7 @@ const Experience = () => {
         </h2>
       </div>
 
-      <div className=" flex flex-col mt-4 justify-center">
+      <div className=" flex flex-col mt-4 lg:mt-24 justify-center">
         <div class=" ml-[10%] lg:ml-[20%] mt-20 sm:mx-auto w-[80%] lg:w-[60%] text-black bg-white p-10 rounded-lg bg-transparent drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]">
           <a
             href="https://www.shahucollegelatur.org.in/"
