@@ -15,7 +15,7 @@ const Projects = ({ dta }) => {
           <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
           <div class="w-4 h-4 rounded-full border-[3px] border-[rgb(69,155,213)] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
           <a
-            href="https://sudhir-kale-portfolio.vercel.app/"
+            href="https://sudhirkale.vercel.app/"
             target="_blank"
             class="flex w-full relative justify-center sm:justify-start"
           >
