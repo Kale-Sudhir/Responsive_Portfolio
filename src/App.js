@@ -172,7 +172,7 @@ const App = memo(() => {
       >
         <div className="flex flex-col justify-between h-screen ">
             <Header set={handleThemeToggle} isDarkMode={isDarkMode} />
-            <Main data={appData.main} />
+            <Main data={appData.main} isDarkMode={isDarkMode} />
           <div className="relative after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] self-center after:left-1/2 after:-translate-x-1/2 after:top-[100px] ">
             <a href="#LatestWork">
               <button className=" scroll-smooth bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20">
@@ -185,9 +185,9 @@ const App = memo(() => {
                   width="44"
                   height="44"
                   viewBox="0 0 100 100"
-                  fill="#fff"
+                  fill={isDarkMode ? "#fff" : "#000"}
                     fillOpacity="1"
-                  stroke="white"
+                  stroke={isDarkMode ? "white" : "black"}
                     strokeWidth="2"
                 >
                   <g transform="translate(0,-952.36218) ">

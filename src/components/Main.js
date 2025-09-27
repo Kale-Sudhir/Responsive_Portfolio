@@ -25,7 +25,7 @@ With a background in UI/UX design, I focus on building clean, user-centric inter
   }
 };
 
-const Main = memo(({ data = defaultData }) => {
+const Main = memo(({ data = defaultData, isDarkMode = true }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const handleModalOpen = useCallback(() => {
@@ -96,19 +96,19 @@ c17 -8 64 -22 105 -32z"
                    className="bg-[#4595eb] py-2 px-4 sm:px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group text-sm sm:text-base"
                  >
             {data.aboutButton}
-            <svg
-              version="1.1"
-              x="0px"
-              y="0px"
-              width="44"
-              height="44"
-              viewBox="0 0 100 100"
-              fill="#fff"
-              fillOpacity="1"
-              stroke="white"
-              strokeWidth="2"
-              className="absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-8 ease-in-out duration-100"
-            >
+             <svg
+               version="1.1"
+               x="0px"
+               y="0px"
+               width="44"
+               height="44"
+               viewBox="0 0 100 100"
+               fill={isDarkMode ? "#fff" : "#000"}
+               fillOpacity="1"
+               stroke={isDarkMode ? "white" : "black"}
+               strokeWidth="2"
+               className="absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-8 ease-in-out duration-100"
+             >
               <g transform="translate(0,-952.36218)">
                 <path d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z" />
               </g>
@@ -145,7 +145,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="w-5 sm:w-6 md:w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
+              className={`w-5 sm:w-6 md:w-7 hover:scale-110 ease-in-out duration-100 ${isDarkMode ? 'hover:text-white' : 'hover:text-gray-800'}`}
             >
               <path
                 fill="currentColor"
@@ -160,7 +160,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              className="w-5 sm:w-6 md:w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
+              className={`w-5 sm:w-6 md:w-7 hover:scale-110 ease-in-out duration-100 ${isDarkMode ? 'hover:text-white' : 'hover:text-gray-800'}`}
             >
               <path
                 fill="currentColor"
@@ -175,7 +175,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="w-5 sm:w-6 md:w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
+              className={`w-5 sm:w-6 md:w-7 hover:scale-110 ease-in-out duration-100 ${isDarkMode ? 'hover:text-white' : 'hover:text-gray-800'}`}
             >
               <path
                 fill="currentColor"
@@ -190,7 +190,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
-              className="hover:scale-110 ease-in-out duration-100 w-5 sm:w-6 md:w-7 hover:text-white "
+              className={`hover:scale-110 ease-in-out duration-100 w-5 sm:w-6 md:w-7 ${isDarkMode ? 'hover:text-white' : 'hover:text-gray-800'}`}
             >
               <path
                 fill="currentColor"
