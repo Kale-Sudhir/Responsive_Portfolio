@@ -57,7 +57,7 @@ c17 -8 64 -22 105 -32z"
             />
           </g>
         </svg> 
-        <div className="flex gap-4">
+        <div className="flex  gap-8 sm:gap-4 md:gap-8">
         <Sun 
           onClick={handleThemeToggle}
           className="hover:scale-110 ease-in-out duration-100 hover:rotate-180"
