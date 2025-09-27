@@ -52,7 +52,7 @@ const Main = memo(({ data = defaultData }) => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="55 40 225.000000 225.000000"
           preserveAspectRatio="xMidYMid meet"
-          className="absolute top-0 md:w-[560px] md:h-[560px] -translate-y-1/3"
+          className="absolute top-0 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[560px] md:h-[560px] -translate-y-1/3"
         >
           <g
             transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
@@ -84,16 +84,16 @@ c17 -8 64 -22 105 -32z"
           </g>
         </svg>
 
-        <div className="relative ml-16">
-          <h1 className="md:text-6xl ml-16 sm:ml-32 font-['Spartan'] ">
+        <div className="relative ml-16 sm:ml-8 md:ml-24">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl ml-4 sm:ml-8 md:ml-16 font-['Spartan'] ">
             {data.name}
           </h1>
-          <p className=" text-2xl italic font-['Merriweather'] my-5 ">
+          <p className="text-lg sm:text-xl md:text-2xl italic font-['Merriweather'] my-5 ">
             {data.role}
           </p>
                  <button  
                    onClick={handleModalOpen} 
-                   className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
+                   className="bg-[#4595eb] py-2 px-4 sm:px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group text-sm sm:text-base"
                  >
             {data.aboutButton}
             <svg
@@ -117,17 +117,17 @@ c17 -8 64 -22 105 -32z"
       
 
        {isModalOpen && (
-         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-           <div className="bg-white p-6 rounded-xl shadow-lg w-100 relative text-black">
-             <h2 className="text-xl font-semibold mb-8 text-[#4253e6e6] ">
+         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+           <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg w-full max-w-md sm:max-w-lg relative text-black max-h-[90vh] overflow-y-auto">
+             <h2 className="text-lg sm:text-xl font-semibold mb-6 sm:mb-8 text-[#4253e6e6] ">
                <span className="border-b-2 border-[#4253e6e6] pb-2 ">{data.aboutTitle}</span>
              </h2>
-             <p className="mb-7 text-sm">
+             <p className="mb-6 sm:mb-7 text-xs sm:text-sm">
                {aboutTextLines}
              </p>
              <button 
                onClick={handleModalClose} 
-               className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l text-white from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
+               className="bg-[#4595eb] py-2 px-4 sm:px-5 rounded font-extrabold bg-gradient-to-l text-white from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group text-sm sm:text-base"
              >
                {data.closeButton}
              </button>
@@ -139,13 +139,13 @@ c17 -8 64 -22 105 -32z"
         </div>
       </div>
 
-      <ul className="ml-auto space-y-7 text-[#b0b2c3] absolute right-8">
+      <ul className="ml-auto space-y-4 sm:space-y-6 md:space-y-7 text-[#b0b2c3] absolute right-2 sm:right-4 md:right-8">
         <li>
           <a href={data.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
+              className="w-5 sm:w-6 md:w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
             >
               <path
                 fill="currentColor"
@@ -160,7 +160,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              className="w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
+              className="w-5 sm:w-6 md:w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
             >
               <path
                 fill="currentColor"
@@ -175,7 +175,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
+              className="w-5 sm:w-6 md:w-7 hover:text-white hover:scale-110 ease-in-out duration-100"
             >
               <path
                 fill="currentColor"
@@ -190,7 +190,7 @@ c17 -8 64 -22 105 -32z"
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
-              className="hover:scale-110 ease-in-out duration-100 w-7 hover:text-white "
+              className="hover:scale-110 ease-in-out duration-100 w-5 sm:w-6 md:w-7 hover:text-white "
             >
               <path
                 fill="currentColor"

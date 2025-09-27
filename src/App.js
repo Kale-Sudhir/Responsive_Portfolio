@@ -8,7 +8,7 @@ import usePerformanceMonitor from "./hooks/usePerformanceMonitor";
 
 const appData = {
   main: {
-    name: "Sudhir Kale",
+    name: "udhir Kale",
     role: "I'm Full Stack Developer",
     aboutButton: "About Me",
     aboutTitle: "About Me",
