@@ -1,15 +1,55 @@
-import React, { useState } from "react";
+import React, { useState, memo, useCallback, useMemo } from "react";
 
-function Main() {
-  const [isOpen, setIsOpen] = useState(false);
+const defaultData = {
+  name: "Sudhir Kale",
+  role: "I'm Full Stack Developer",
+  aboutButton: "About Me",
+  aboutTitle: "About Me",
+  aboutText: `I am a dedicated full-stack developer with a strong foundation in both frontend and backend technologies.
+
+My core expertise lies in React.js, Angular JavaScript frameworks, Bootstrap, and Tailwind CSS.
+
+As a frontend developer intern at OneGreenDiary, Pune, I contribute to production-level applications using React and Angular.
+
+I am well-versed in creating responsive, accessible, and high-performance user interfaces.
+
+I also manage deployments using tools like Plesk and cPanel, ensuring seamless website hosting and maintenance.
+
+With a background in UI/UX design, I focus on building clean, user-centric interfaces.`,
+  closeButton: "Close",
+  socialLinks: {
+    linkedin: "https://www.linkedin.com/in/sudhir-kale/",
+    x: "https://x.com/Kale_Sudhir45",
+    instagram: "https://www.instagram.com/its__sudhirrr/",
+    github: "https://github.com/Kale-Sudhir"
+  }
+};
+
+const Main = memo(({ data = defaultData }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const handleModalOpen = useCallback(() => {
+    setIsModalOpen(true);
+  }, []);
+  
+  const handleModalClose = useCallback(() => {
+    setIsModalOpen(false);
+  }, []);
+
+  const aboutTextLines = useMemo(() => {
+    return data.aboutText.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ));
+  }, [data.aboutText]);
   return (
     <div className="mt-10 flex relative ">
       <div className="px-4 max-w-screen-xl mx-auto w-full ">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
-          // width="420.000000pt"
-          // height="405.000000pt"
           viewBox="55 40 225.000000 225.000000"
           preserveAspectRatio="xMidYMid meet"
           className="absolute top-0 md:w-[560px] md:h-[560px] -translate-y-1/3"
@@ -46,13 +86,16 @@ c17 -8 64 -22 105 -32z"
 
         <div className="relative ml-16">
           <h1 className="md:text-6xl ml-16 sm:ml-32 font-['Spartan'] ">
-            udhir Kale
+            {data.name}
           </h1>
           <p className=" text-2xl italic font-['Merriweather'] my-5 ">
-            I'm Full Stack Developer
+            {data.role}
           </p>
-          <button  onClick={() => setIsOpen(true)} className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">
-            About Me
+                 <button  
+                   onClick={handleModalOpen} 
+                   className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
+                 >
+            {data.aboutButton}
             <svg
               version="1.1"
               x="0px"
@@ -61,9 +104,9 @@ c17 -8 64 -22 105 -32z"
               height="44"
               viewBox="0 0 100 100"
               fill="#fff"
-              fill-opacity="1"
+              fillOpacity="1"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
               className="absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-8 ease-in-out duration-100"
             >
               <g transform="translate(0,-952.36218)">
@@ -73,26 +116,24 @@ c17 -8 64 -22 105 -32z"
           </button>
       
 
-      {isOpen && (
-     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-     <div className="bg-white p-6 rounded-xl shadow-lg w-100 max-h-[80vh] overflow-y-auto relative text-black">
-       <h2 className="text-xl font-semibold mb-4 text-[#4253e6e6]">About Me</h2>
-       <p className="mb-4 leading-relaxed text-sm">
-         I am a dedicated full-stack developer with a strong foundation in both frontend and backend technologies. <br /><br />
-         My core expertise lies in React.js, Angular JavaScript frameworks, Bootstrap, and Tailwind CSS. <br /><br />
-         As a frontend developer intern at OneGreenDiary, Pune, I contribute to production-level applications using React and Angular. <br /><br />
-         I am well-versed in creating responsive, accessible, and high-performance user interfaces. <br /><br />
-         I also manage deployments using tools like Plesk and cPanel, ensuring seamless website hosting and maintenance. <br /><br />
-         With a background in UI/UX design, I focus on building clean, user-centric interfaces.
-       </p>
-       <button onClick={() => setIsOpen(false)} className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l text-white from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">
-       
-         Close
-       </button>
-     </div>
-   </div>
-   
-      )}
+       {isModalOpen && (
+         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+           <div className="bg-white p-6 rounded-xl shadow-lg w-100 relative text-black">
+             <h2 className="text-xl font-semibold mb-8 text-[#4253e6e6] ">
+               <span className="border-b-2 border-[#4253e6e6] pb-2 ">{data.aboutTitle}</span>
+             </h2>
+             <p className="mb-7 text-sm">
+               {aboutTextLines}
+             </p>
+             <button 
+               onClick={handleModalClose} 
+               className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l text-white from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
+             >
+               {data.closeButton}
+             </button>
+           </div>
+         </div>
+       )}
 
 
         </div>
@@ -100,7 +141,7 @@ c17 -8 64 -22 105 -32z"
 
       <ul className="ml-auto space-y-7 text-[#b0b2c3] absolute right-8">
         <li>
-          <a href="https://www.linkedin.com/in/sudhir-kale/">
+          <a href={data.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -115,7 +156,7 @@ c17 -8 64 -22 105 -32z"
         </li>
 
         <li>
-          <a href="https://x.com/Kale_Sudhir45">
+          <a href={data.socialLinks.x} target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -130,7 +171,7 @@ c17 -8 64 -22 105 -32z"
         </li>
 
         <li>
-          <a href="https://www.instagram.com/its__sudhirrr/">
+          <a href={data.socialLinks.instagram} target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -145,7 +186,7 @@ c17 -8 64 -22 105 -32z"
         </li>
 
         <li>
-          <a href="https://github.com/Kale-Sudhir">
+          <a href={data.socialLinks.github} target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -161,6 +202,8 @@ c17 -8 64 -22 105 -32z"
       </ul>
     </div>
   );
-}
+});
+
+Main.displayName = 'Main';
 
 export default Main;

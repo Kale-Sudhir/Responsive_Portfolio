@@ -1,11 +1,21 @@
-import React from "react";
+import React, { memo } from "react";
 
-const Footer = () => {
+const defaultData = {
+  copyright: "Sudhir Kale © 2024",
+  socialLinks: {
+    linkedin: "https://www.linkedin.com/in/sudhir-kale/",
+    x: "https://x.com/Kale_Sudhir45",
+    instagram: "https://www.instagram.com/its__sudhirrr/",
+    email: "mailto:sudhir04kale@gmail.com"
+  }
+};
+
+const Footer = memo(({ data = defaultData }) => {
   return (
     <div>
-      <footer class="flex flex-col items-center pb-10 ">
-        <p class=" mt-5 text-1xl ">Sudhir Kale © 2024</p>
-        <div class="black-logo my-4">
+      <footer className="flex flex-col items-center pb-10 ">
+        <p className=" mt-5 text-1xl ">{data.copyright}</p>
+        <div className="black-logo my-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="140.000000pt"
@@ -13,10 +23,9 @@ const Footer = () => {
             viewBox="20 10 225.000000 225.000000"
             fill="#0c72f0"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            // class="feather feather-phone"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)">
               <path
@@ -44,11 +53,11 @@ c17 -8 64 -22 105 -32z"
             </g>
           </svg>
         </div>
-        <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
+        <ul className="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
           <li>
-            <a href="https://www.linkedin.com/in/sudhir-kale/" target="_blank">
+            <a href={data.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
               <svg
-                class="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
+                className="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -60,9 +69,9 @@ c17 -8 64 -22 105 -32z"
             </a>
           </li>
           <li>
-            <a href="https://x.com/Kale_Sudhir45" target="_blank">
+            <a href={data.socialLinks.x} target="_blank" rel="noopener noreferrer">
               <svg
-                class="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
+                className="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -74,23 +83,23 @@ c17 -8 64 -22 105 -32z"
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/its__sudhirrr/">
+            <a href={data.socialLinks.instagram} target="_blank" rel="noopener noreferrer">
               <svg
-                class="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
+                className="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
                 <path
                   fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1z"
                 ></path>
               </svg>
             </a>
           </li>
           <li>
-            <a href="mailto:sudhir04kale@gmail.com" target="_blank">
+            <a href={data.socialLinks.email} target="_blank" rel="noopener noreferrer">
               <svg
-                class="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
+                className="w-5 hover:text-white hover:scale-110 ease-in-out duration-100"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -105,6 +114,8 @@ c17 -8 64 -22 105 -32z"
       </footer>
     </div>
   );
-};
+});
+
+Footer.displayName = 'Footer';
 
 export default Footer;

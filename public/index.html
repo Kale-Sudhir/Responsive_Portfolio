@@ -4,30 +4,211 @@
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover" />
+  <meta name="theme-color" content="#111111" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Sudhir Kale - Full Stack Developer | React & Angular Specialist</title>
+  <meta name="title" content="Sudhir Kale - Full Stack Developer | React & Angular Specialist" />
+  <meta name="description" content="Experienced Full Stack Developer specializing in React.js, Angular, and modern web technologies. Building responsive, high-performance web applications with clean code and user-centric design." />
+  <meta name="keywords" content="Sudhir Kale, Full Stack Developer, React Developer, Angular Developer, JavaScript, TypeScript, Web Development, Frontend Developer, Backend Developer, Portfolio" />
+  <meta name="author" content="Sudhir Kale" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sudhirkale.vercel.app/" />
+  <meta property="og:title" content="Sudhir Kale - Full Stack Developer | React & Angular Specialist" />
+  <meta property="og:description" content="Experienced Full Stack Developer specializing in React.js, Angular, and modern web technologies. Building responsive, high-performance web applications with clean code and user-centric design." />
+  <meta property="og:image" content="https://sudhirkale.vercel.app/og-image.jpg" />
+  <meta property="og:site_name" content="Sudhir Kale Portfolio" />
+  <meta property="og:locale" content="en_US" />
 
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sudhirkale.vercel.app/" />
+  <meta property="twitter:title" content="Sudhir Kale - Full Stack Developer | React & Angular Specialist" />
+  <meta property="twitter:description" content="Experienced Full Stack Developer specializing in React.js, Angular, and modern web technologies. Building responsive, high-performance web applications with clean code and user-centric design." />
+  <meta property="twitter:image" content="https://sudhirkale.vercel.app/og-image.jpg" />
+  <meta property="twitter:creator" content="@Kale_Sudhir45" />
+  <meta property="twitter:site" content="@Kale_Sudhir45" />
 
+  <!-- Additional SEO Meta Tags -->
+  <meta name="application-name" content="Sudhir Kale Portfolio" />
+  <meta name="apple-mobile-web-app-title" content="Sudhir Kale" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-TileColor" content="#111111" />
+  <meta name="msapplication-config" content="%PUBLIC_URL%/browserconfig.xml" />
 
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Critical CSS for above-the-fold content -->
+  <style>
+    /* Critical styles for initial render */
+    body { margin: 0; font-family: 'Nunito', sans-serif; }
+    .scroll-smooth { scroll-behavior: smooth; }
+    .select-none { user-select: none; }
+    .flex { display: flex; }
+    .items-center { align-items: center; }
+    .justify-between { justify-content: space-between; }
+    .w-full { width: 100%; }
+    .max-w-screen-xl { max-width: 1280px; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .pr-6 { padding-right: 1.5rem; }
+    .mt-10 { margin-top: 2.5rem; }
+    .relative { position: relative; }
+    .px-4 { padding-left: 1rem; padding-right: 1rem; }
+    .text-6xl { font-size: 3.75rem; line-height: 1; }
+    .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+    .font-bold { font-weight: 700; }
+    .italic { font-style: italic; }
+    .my-5 { margin-top: 1.25rem; margin-bottom: 1.25rem; }
+    .bg-\[#4595eb\] { background-color: #4595eb; }
+    .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+    .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .rounded { border-radius: 0.25rem; }
+    .font-extrabold { font-weight: 800; }
+    .hover\:scale-110:hover { transform: scale(1.1); }
+    .ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+    .duration-100 { transition-duration: 100ms; }
+    .group:hover .group-hover\:-right-8 { right: -2rem; }
+    .absolute { position: absolute; }
+    .top-1\/2 { top: 50%; }
+    .-translate-y-1\/2 { transform: translateY(-50%); }
+    .-right-6 { right: -1.5rem; }
+    .transition-all { transition-property: all; }
+    .duration-1000 { transition-duration: 1000ms; }
+    .opacity-100 { opacity: 1; }
+    .translate-y-0 { transform: translateY(0); }
+    .opacity-0 { opacity: 0; }
+    .translate-y-10 { transform: translateY(2.5rem); }
+    
+    /* Mobile-specific optimizations */
+    @media (max-width: 768px) {
+      * { 
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      body {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Optimize touch targets */
+      button, a, [role="button"] {
+        min-height: 44px;
+        min-width: 44px;
+        touch-action: manipulation;
+      }
+      
+      /* Prevent zoom on input focus */
+      input, textarea, select {
+        font-size: 16px;
+        -webkit-appearance: none;
+        border-radius: 0;
+      }
+      
+      /* Smooth scrolling for mobile */
+      html {
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+      }
+      
+      /* Optimize images for mobile */
+      img {
+        max-width: 100%;
+        height: auto;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+      
+      /* Reduce motion for better performance */
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    }
+  </style>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/sw.js" as="script" />
+  <link rel="preload" href="/mobile-sw.js" as="script" />
+  <link rel="preload" href="/worker.js" as="script" />
+  <link rel="modulepreload" href="/static/js/main.js" />
+  
+  <!-- Mobile-specific optimizations -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Sudhir Kale Portfolio" />
+  
+  <!-- Preload mobile-specific resources -->
+  <link rel="preload" href="/static/css/main.css" as="style" media="(max-width: 768px)" />
+  <link rel="preload" href="/static/js/main.js" as="script" media="(max-width: 768px)" />
+  
+  <!-- DNS prefetch for external resources -->
+  <!-- Removed to prevent CORB issues -->
+
+  <!-- Favicon and Icons -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <!-- <script src="./matter.js" defer></script> -->
-  <title>Sudhir Kale</title>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sudhir Kale",
+    "jobTitle": "Full Stack Developer",
+    "description": "Experienced Full Stack Developer specializing in React.js, Angular, and modern web technologies",
+    "url": "https://sudhirkale.vercel.app/",
+    "image": "https://sudhirkale.vercel.app/profile-image.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/sudhir-kale/",
+      "https://x.com/Kale_Sudhir45",
+      "https://www.instagram.com/its__sudhirrr/",
+      "https://github.com/Kale-Sudhir"
+    ],
+    "knowsAbout": [
+      "React.js",
+      "Angular",
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "Web Development",
+      "Frontend Development",
+      "Backend Development"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "OneGreenDiary Software Pvt. Ltd."
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Rajarshi Shahu Mahavidyalaya, Latur"
+    }
+  }
+  </script>
 </head>
 
 <body>
