@@ -57,23 +57,19 @@ c17 -8 64 -22 105 -32z"
             />
           </g>
         </svg> 
-        <div className="flex gap-8">
+        <div className="flex  gap-8 sm:gap-4 md:gap-8">
         <Sun 
           onClick={handleThemeToggle}
           className="hover:scale-110 ease-in-out duration-100 hover:rotate-180"
-          role="button"
-          tabIndex="0"
+         
           aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
           onKeyDown={(e) => handleKeyDown(e, handleThemeToggle)} />
         
-        <Phone 
-          onClick={handlePhoneClick}
-          className="hover:scale-110 ease-in-out duration-100"
-          role="button"
-          tabIndex="0"
-          aria-label="Contact via phone"
-          onKeyDown={(e) => handleKeyDown(e, handlePhoneClick)} />
+        
           
+          <Phone  onClick={handlePhoneClick}
+          className="hover:scale-110 ease-in-out duration-100 cursor-pointer "
+          onKeyDown={(e) => handleKeyDown(e, handlePhoneClick)} />
           <a
             href="https://wa.me/your-phone-number"
             target="_blank"

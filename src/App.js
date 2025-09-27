@@ -8,7 +8,7 @@ import usePerformanceMonitor from "./hooks/usePerformanceMonitor";
 
 const appData = {
   main: {
-    name: "Sudhir Kale",
+    name: "udhir Kale",
     role: "I'm Full Stack Developer",
     aboutButton: "About Me",
     aboutTitle: "About Me",
@@ -27,7 +27,7 @@ With a background in UI/UX design, I focus on building clean, user-centric inter
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/sudhir-kale/",
       x: "https://x.com/Kale_Sudhir45",
-      instagram: "https://www.instagram.com/its__sudhirrr/",
+      instagram: "https://www.instagram.com/its_sudhirr/",
       github: "https://github.com/Kale-Sudhir"
     }
   },
