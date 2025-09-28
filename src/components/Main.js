@@ -9,7 +9,7 @@ const defaultData = {
 
 My core expertise lies in React.js, Angular JavaScript frameworks, Bootstrap, and Tailwind CSS.
 
-As a frontend developer intern at OneGreenDiary, Pune, I contribute to production-level applications using React and Angular.
+As a frontend developer at OneGreenDiary, Pune, I contribute to production-level applications using React and Angular.
 
 I am well-versed in creating responsive, accessible, and high-performance user interfaces.
 
@@ -118,7 +118,7 @@ c17 -8 64 -22 105 -32z"
 
        {isModalOpen && (
          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-           <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg w-full max-w-md sm:max-w-lg relative text-black max-h-[90vh] overflow-y-auto">
+           <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg w-full max-w-md sm:max-w-3xl relative text-black max-h-[90vh] overflow-y-auto">
              <h2 className="text-lg sm:text-xl font-semibold mb-6 sm:mb-8 text-[#4253e6e6] ">
                <span className="border-b-2 border-[#4253e6e6] pb-2 ">{data.aboutTitle}</span>
              </h2>
